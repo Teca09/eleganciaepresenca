@@ -4,36 +4,48 @@ const products = [
     category: 'Relógios Masculinos',
     description: 'Um detalhe marcante para completar o seu visual com personalidade. Consulte as opções disponíveis.',
     image: 'assets/relogio_classico.jpg',
+    width: 736,
+    height: 736,
   },
   {
     name: 'Óculos de sol',
     category: 'Óculos Masculinos',
     description: 'Encontre o modelo que combina com o seu estilo. Fale connosco para conhecer as opções.',
     image: 'assets/Oculos_Masculinos.jpg',
+    width: 735,
+    height: 832,
   },
   {
     name: 'Sapato, mocassim ou sneaker',
     category: 'Calçados Masculinos',
     description: 'Do clássico ao casual, escolha o par ideal para a sua ocasião. Consulte modelos e disponibilidade.',
     image: 'assets/sapato.jpg',
+    width: 736,
+    height: 920,
   },
   {
     name: 'Bolsa estruturada',
     category: 'Bolsas Femininas',
     description: 'Um acessório elegante que acompanha diferentes momentos. Peça informações sobre cores e modelos.',
     image: 'assets/bolsa.jpg',
+    width: 500,
+    height: 500,
   },
   {
     name: 'Colar + brincos + pulseira',
     category: 'Joias & Acessórios',
     description: 'Complete a produção com detalhes que fazem a diferença. Consulte as combinações disponíveis.',
     image: 'assets/joias.jpg',
+    width: 736,
+    height: 1104,
   },
   {
     name: 'Scarpin, sandália ou sapatilha',
     category: 'Calçados Femininos',
     description: 'Encontre o calçado certo para expressar o seu estilo. Fale connosco e consulte as opções.',
     image: 'assets/nice.jpg',
+    width: 736,
+    height: 736,
   }
 ];
 
@@ -44,7 +56,7 @@ if (productGrid) {
     .map(
       (product) => `
         <article class="product-card reveal">
-          <img src="${product.image}" alt="${product.name} - ${product.category}" loading="lazy" />
+          <img src="${product.image}" alt="${product.name} - ${product.category}" width="${product.width}" height="${product.height}" loading="lazy" />
           <div class="product-content">
             <div class="product-meta">
               <span class="product-badge">${product.category}</span>

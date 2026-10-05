@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://teca09.github.io/eleganciaepresenca/sitemap.xml
